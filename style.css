@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Grey+Qo&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "EB Garamond", serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+#main{
+    width: 100%;
+    height: 85vh;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    padding: 0vw 10vw;
+    z-index: 99;
+}
+
+nav a, i{
+    font-size: 1.5vw;
+    text-decoration: none;
+    color: #fff;
+}
+
+.cntr-nav{
+    display: flex;
+    gap: 3vw;
+}
+
+nav i{
+    font-size: 1.5vw;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/bg.png);
+}
+
+.header h1{
+    font-size: 18vw;
+    font-family: "EB Garamond", serif;
+    color: #fff;
+}
+
+
+
+#choclate{
+    position: absolute;
+    top: 8%;
+    left: 42%;
+    width: 25%;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#can{
+ position: absolute;
+ 
+    width: 35%;
+    z-index: 2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#choclate2{
+    position: absolute;
+   right: 35%;
+   top: 65%;
+    width: 15%;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#almond{
+    position: absolute;
+   left: 5%;
+   top: 10%;
+    width: 7%;
+    transform: rotate(60deg);
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+#almond2{
+    position: absolute;
+   left: 75%;
+   top: 70%;
+    width: 10%;
+    transform: rotate(-90deg);
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+
+}
+.about{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #a9774e, #864831, #402014);
+}
+.about-left, .about-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+    width: 50%;
+    height: 100%;
+}
+.about-left img{
+    width: 90%;
+    margin-top: 45vh;
+    transform: rotateX(50deg);
+}
+.about-right h1{
+    font-size: 5vw;
+    color: #fff;
+    font-family: "EB Garamond", serif;
+}
+.about-right p{
+    font-size: 1vw;
+    color: #fff;
+    width: 80%;
+}
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+.product img{
+    width: 100%;    
+    height: 100%;
+}
